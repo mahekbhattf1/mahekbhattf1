@@ -1,64 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1400" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 850 1720" width="100%" height="100%">
   <defs>
     <style>
-      @keyframes bg-drift-1 { 0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.65; } 50% { transform: translate(45px, -35px) scale(1.15); opacity: 0.95; } }
-      @keyframes bg-drift-2 { 0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.55; } 50% { transform: translate(-40px, 30px) scale(1.1); opacity: 0.85; } }
-      @keyframes bg-drift-3 { 0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.6; } 50% { transform: translate(30px, 40px) scale(1.2); opacity: 0.9; } }
-      @keyframes bg-drift-4 { 0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; } 50% { transform: translate(-35px, -25px) scale(1.05); opacity: 0.8; } }
-      @keyframes bg-scan { 0% { transform: translateY(-1400px); opacity: 0; } 50% { opacity: 0.5; } 100% { transform: translateY(1400px); opacity: 0; } }
+      @keyframes bg-drift-1 { 0%, 100% { transform: translate(0, 0); opacity: 0.7; } 50% { transform: translate(40px, -30px); opacity: 1; } }
+      @keyframes bg-drift-2 { 0%, 100% { transform: translate(0, 0); opacity: 0.6; } 50% { transform: translate(-45px, 25px); opacity: 0.95; } }
+      @keyframes bg-drift-3 { 0%, 100% { transform: translate(0, 0); opacity: 0.65; } 50% { transform: translate(35px, 35px); opacity: 1; } }
+      @keyframes bg-drift-4 { 0%, 100% { transform: translate(0, 0); opacity: 0.55; } 50% { transform: translate(-30px, -20px); opacity: 0.9; } }
+      @keyframes bg-scan { 0% { transform: translateY(-1720px); opacity: 0; } 50% { opacity: 0.45; } 100% { transform: translateY(1720px); opacity: 0; } }
 
-      #aura-cyan-top { animation: bg-drift-1 9s ease-in-out infinite; transform-origin: 200px 200px; }
-      #aura-purple-mid { animation: bg-drift-2 11s ease-in-out infinite 0.5s; transform-origin: 650px 500px; }
-      #aura-pink-mid { animation: bg-drift-3 8.5s ease-in-out infinite 1s; transform-origin: 200px 900px; }
-      #aura-cyan-bottom { animation: bg-drift-4 10s ease-in-out infinite 0.2s; transform-origin: 650px 1200px; }
+      #aura-cyan-top { animation: bg-drift-1 9s ease-in-out infinite; }
+      #aura-purple-mid { animation: bg-drift-2 11s ease-in-out infinite 0.5s; }
+      #aura-pink-mid { animation: bg-drift-3 8.5s ease-in-out infinite 1s; }
+      #aura-cyan-bottom { animation: bg-drift-4 10s ease-in-out infinite 0.2s; }
       #bg-scanline { animation: bg-scan 7s linear infinite; }
     </style>
 
+    <!-- Radial Gradients -->
     <radialGradient id="grad-cyan" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.38" />
-      <stop offset="50%" stop-color="#0080ff" stop-opacity="0.14" />
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.45" />
+      <stop offset="60%" stop-color="#0080ff" stop-opacity="0.15" />
       <stop offset="100%" stop-color="#06060a" stop-opacity="0" />
     </radialGradient>
 
     <radialGradient id="grad-purple" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#8a2be2" stop-opacity="0.4" />
-      <stop offset="60%" stop-color="#551a8b" stop-opacity="0.12" />
+      <stop offset="0%" stop-color="#8a2be2" stop-opacity="0.45" />
+      <stop offset="60%" stop-color="#551a8b" stop-opacity="0.15" />
       <stop offset="100%" stop-color="#06060a" stop-opacity="0" />
     </radialGradient>
 
     <radialGradient id="grad-pink" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff2a85" stop-opacity="0.35" />
-      <stop offset="55%" stop-color="#b80058" stop-opacity="0.1" />
+      <stop offset="0%" stop-color="#ff2a85" stop-opacity="0.4" />
+      <stop offset="60%" stop-color="#b80058" stop-opacity="0.12" />
       <stop offset="100%" stop-color="#06060a" stop-opacity="0" />
     </radialGradient>
 
     <linearGradient id="scan-grad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#00d4ff" stop-opacity="0" />
-      <stop offset="50%" stop-color="#7ee7ff" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#7ee7ff" stop-opacity="0.2" />
       <stop offset="100%" stop-color="#00d4ff" stop-opacity="0" />
     </linearGradient>
 
+    <!-- Background Tech Grid -->
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(110, 80, 220, 0.04)" stroke-width="1" />
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(110, 80, 220, 0.05)" stroke-width="1" />
     </pattern>
   </defs>
 
-  <rect width="850" height="1400" rx="24" fill="#06060a" />
+  <!-- 1. Master Canvas Background -->
+  <rect width="850" height="1720" rx="24" fill="#06060a" />
 
-  <g filter="blur(30px)">
-    <circle id="aura-cyan-top" cx="180" cy="180" r="260" fill="url(#grad-cyan)" />
-    <circle id="aura-purple-mid" cx="680" cy="480" r="300" fill="url(#grad-purple)" />
-    <circle id="aura-pink-mid" cx="160" cy="850" r="270" fill="url(#grad-pink)" />
-    <circle id="aura-cyan-bottom" cx="680" cy="1180" r="280" fill="url(#grad-cyan)" />
+  <!-- 2. Continuous Glowing Mesh -->
+  <g filter="blur(35px)">
+    <circle id="aura-cyan-top" cx="180" cy="220" r="280" fill="url(#grad-cyan)" />
+    <circle id="aura-purple-mid" cx="700" cy="580" r="320" fill="url(#grad-purple)" />
+    <circle id="aura-pink-mid" cx="150" cy="1050" r="300" fill="url(#grad-pink)" />
+    <circle id="aura-cyan-bottom" cx="680" cy="1480" r="300" fill="url(#grad-cyan)" />
   </g>
 
-  <rect width="850" height="1400" rx="24" fill="url(#grid)" />
+  <!-- 3. Grid Pattern Layer -->
+  <rect width="850" height="1720" rx="24" fill="url(#grid)" />
 
-  <line x1="40" y1="100" x2="810" y2="100" stroke="rgba(110, 80, 220, 0.15)" stroke-width="1" />
-  <line x1="40" y1="720" x2="810" y2="720" stroke="rgba(110, 80, 220, 0.12)" stroke-width="1" />
-  <line x1="40" y1="1320" x2="810" y2="1320" stroke="rgba(110, 80, 220, 0.15)" stroke-width="1" />
-
+  <!-- 4. Subtle Border and Ambient Lines -->
+  <rect width="848" height="1718" x="1" y="1" rx="23" fill="none" stroke="rgba(110, 80, 220, 0.25)" stroke-width="1.5" />
   <rect id="bg-scanline" x="0" y="0" width="850" height="18" fill="url(#scan-grad)" />
 
-  <rect width="848" height="1398" x="1" y="1" rx="23" fill="none" stroke="rgba(110, 80, 220, 0.25)" stroke-width="1.5" />
+  <!-- 5. Content Layers Embedded Seamlessly on Top of Background -->
+
+  <!-- Header GIF -->
+  <g transform="translate(25, 25)">
+    <clipPath id="clip-hdr">
+      <rect width="800" height="260" rx="16" />
+    </clipPath>
+    <image href="https://raw.githubusercontent.com/mahekbhattf1/mahekbhattf1/main/pfp.gif" width="800" height="260" clip-path="url(#clip-hdr)" preserveAspectRatio="xMidYMid slice" />
+  </g>
+
+  <!-- Social Badges -->
+  <g transform="translate(325, 305)">
+    <a href="https://www.linkedin.com/in/mahek-bhattf1/" target="_blank">
+      <image href="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&amp;logo=linkedin&amp;logoColor=7ee7ff&amp;labelColor=06060a&amp;color=121026" x="0" y="0" height="28" />
+    </a>
+    <a href="mailto:mahekbhattf1@gmail.com">
+      <image href="https://img.shields.io/badge/Email-D14836?style=flat-square&amp;logo=gmail&amp;logoColor=ff88cc&amp;labelColor=06060a&amp;color=121026" x="110" y="0" height="28" />
+    </a>
+  </g>
+
+  <!-- About Me -->
+  <image href="https://raw.githubusercontent.com/mahekbhattf1/mahekbhattf1/main/about-me.svg" x="25" y="350" width="800" />
+
+  <!-- Featured Projects -->
+  <image href="https://raw.githubusercontent.com/mahekbhattf1/mahekbhattf1/main/featured-projects.svg" x="25" y="600" width="800" />
+
+  <!-- Tech Stack -->
+  <image href="https://raw.githubusercontent.com/mahekbhattf1/mahekbhattf1/main/tech-stack.svg" x="25" y="1020" width="800" />
+
+  <!-- GitHub Streak Widget -->
+  <image href="https://streak-stats.demolab.com/?user=mahekbhattf1&amp;background=06060a00&amp;border=6e50dc40&amp;stroke=6e50dc40&amp;ring=7ee7ff&amp;fire=ff88cc&amp;currStreakNum=ffffff&amp;sideNums=ffffff&amp;currStreakLabel=7ee7ff&amp;sideLabels=ff88cc&amp;dates=8a8ab0&amp;border_radius=16" x="25" y="1230" width="800" />
+
+  <!-- Footer Wave -->
+  <image href="https://capsule-render.vercel.app/api?type=waving&amp;color=06060a&amp;stroke=6e50dc&amp;strokeWidth=1&amp;height=100&amp;section=footer" x="25" y="1560" width="800" height="100" />
 </svg>
