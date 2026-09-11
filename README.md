@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./pfp.gif" width="100%" alt="Header Banner" />
+  <img src="pfp.gif" width="100%" alt="Header Banner" />
 </div>
 
 <div align="center">
