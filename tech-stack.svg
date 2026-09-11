@@ -1,0 +1,45 @@
+<svg width="800" height="110" viewBox="0 0 800 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="tg1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(100,20,200,0.5)" />
+      <stop offset="100%" stop-color="rgba(100,20,200,0)" />
+    </radialGradient>
+    <radialGradient id="tg2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(0,180,240,0.4)" />
+      <stop offset="100%" stop-color="rgba(0,180,240,0)" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    @keyframes ts-scan { 0% { transform: translate(-800px, 0); } 100% { transform: translate(800px, 0); } }
+    .scan-line { animation: ts-scan 4s linear infinite; }
+  </style>
+
+  <rect width="800" height="110" rx="24" fill="#06060a" stroke="rgba(110,80,220,0.2)" stroke-width="1"/>
+
+  <ellipse cx="250" cy="55" rx="170" ry="45" fill="url(#tg1)" />
+  <ellipse cx="600" cy="55" rx="160" ry="45" fill="url(#tg2)" />
+
+  <text x="210" y="30" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="rgba(120,200,255,0.7)">DATA ANALYSIS &amp; CODE</text>
+  <text x="590" y="30" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="rgba(200,120,255,0.7)">BI &amp; ENTERPRISE SYSTEMS</text>
+
+  <rect x="50" y="44" width="90" height="36" rx="18" fill="rgba(8,6,14,0.85)" stroke="rgba(120,200,255,0.25)"/>
+  <text x="95" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#7ee7ff">Python</text>
+
+  <rect x="150" y="44" width="75" height="36" rx="18" fill="rgba(8,6,14,0.85)" stroke="rgba(160,120,255,0.25)"/>
+  <text x="187" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#d0c0ff">SQL</text>
+
+  <rect x="235" y="44" width="130" height="36" rx="18" fill="rgba(8,6,14,0.85)" stroke="rgba(120,220,120,0.25)"/>
+  <text x="300" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#9ee79e">Advanced Excel</text>
+
+  <line x1="410" y1="20" x2="410" y2="90" stroke="rgba(110,80,220,0.25)" stroke-width="1"/>
+
+  <rect x="460" y="44" width="115" height="36" rx="18" fill="rgba(8,6,14,0.85)" stroke="rgba(255,160,100,0.25)"/>
+  <text x="517" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffb088">Tableau</text>
+
+  <rect x="585" y="44" width="95" height="36" rx="18" fill="rgba(8,6,14,0.85)" stroke="rgba(120,180,255,0.25)"/>
+  <text x="632" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#7eb8ff">SAP</text>
+
+  <rect x="690" y="44" width="70" height="36" rx="18" fill="rgba(8,6,14,0.85)" stroke="rgba(255,200,80,0.25)"/>
+  <text x="725" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffcc88">BI</text>
+</svg>
