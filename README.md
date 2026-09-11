@@ -42,8 +42,8 @@
 ### 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mahekbhattf1&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="Mahek's GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahekbhattf1&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=mahekbhattf1&show_icons=true&theme=radical&hide_border=true" alt="Mahek's GitHub Stats" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=mahekbhattf1&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
 </div>
 
 <div align="center">
