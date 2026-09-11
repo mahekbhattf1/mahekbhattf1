@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=220&section=header&text=Mahek%20Bhatt&fontSize=60&fontAlignY=38&desc=Software%20Engineer%20%7C%20Full%20Stack%20Developer&descFontSize=20&descAlignY=58" width="100%" alt="Header" />
+  <img src="./pfp.gif" width="100%" alt="Header Banner" />
 </div>
 
 <div align="center">
@@ -51,16 +51,6 @@
 ---
 
 ### 📊 GitHub Analytics
-
-<div align="center">
-  <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mahekbhattf1&theme=react-dark&hide_border=true&area=true" alt="Mahek's Activity Graph" width="95%" />
-</div>
-  <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=mahekbhattf1&theme=radical&hide_border=true" alt="Streak Stats" />
-</div>
-</div>
-
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahekbhattf1&theme=radical&hide_border=true" alt="GitHub Streak" width="97%" />
 </div>
