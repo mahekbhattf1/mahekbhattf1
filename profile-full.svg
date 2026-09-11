@@ -1,0 +1,121 @@
+<svg width="840" height="740" viewBox="0 0 840 740" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="rootG1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(138,43,226,0.5)" />
+      <stop offset="60%" stop-color="rgba(138,43,226,0.1)" />
+      <stop offset="100%" stop-color="rgba(138,43,226,0)" />
+    </radialGradient>
+    <radialGradient id="rootG2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(0,220,240,0.4)" />
+      <stop offset="60%" stop-color="rgba(0,220,240,0.08)" />
+      <stop offset="100%" stop-color="rgba(0,220,240,0)" />
+    </radialGradient>
+    <radialGradient id="rootG3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(255,40,120,0.35)" />
+      <stop offset="100%" stop-color="rgba(255,40,120,0)" />
+    </radialGradient>
+    <linearGradient id="scan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(120,200,255,0)" />
+      <stop offset="50%" stop-color="rgba(120,200,255,0.35)" />
+      <stop offset="100%" stop-color="rgba(120,200,255,0)" />
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#d0c0ff" />
+      <stop offset="70%" stop-color="#7ee7ff" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes root-drift-r { 0%, 100% { transform: translate(0, 0); opacity: 0.7; } 50% { transform: translate(35px, -20px); opacity: 1.1; } }
+    @keyframes root-drift-l { 0%, 100% { transform: translate(0, 0); opacity: 0.6; } 50% { transform: translate(-30px, 20px); opacity: 1; } }
+    @keyframes scan-anim { 0% { transform: translate(-840px, 0); opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translate(840px, 0); opacity: 0; } }
+    @keyframes pulse-corner { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+    .rg1 { animation: root-drift-r 8s ease-in-out infinite; }
+    .rg2 { animation: root-drift-l 9.5s ease-in-out infinite; }
+    .scan1 { animation: scan-anim 4.5s linear infinite; }
+    .scan2 { animation: scan-anim 6s linear infinite 1.5s; }
+    .c-pulse { animation: pulse-corner 3s ease-in-out infinite; }
+  </style>
+
+  <rect width="840" height="740" rx="20" fill="#06060a" stroke="rgba(110,80,220,0.22)" stroke-width="1.5"/>
+
+  <ellipse class="rg1" cx="120" cy="140" rx="260" ry="160" fill="url(#rootG1)" />
+  <ellipse class="rg2" cx="720" cy="380" rx="240" ry="180" fill="url(#rootG2)" />
+  <ellipse class="rg1" cx="220" cy="620" rx="220" ry="140" fill="url(#rootG3)" />
+
+  <rect class="scan1" x="0" y="240" width="220" height="1" fill="url(#scan)" />
+  <rect class="scan2" x="0" y="520" width="260" height="1" fill="url(#scan)" />
+  <path d="M 30 25 L 20 25 L 20 35" stroke="rgba(120,200,255,0.6)" stroke-width="1.5" fill="none" />
+  <path d="M 810 25 L 820 25 L 820 35" stroke="rgba(200,120,255,0.6)" stroke-width="1.5" fill="none" />
+  <path d="M 30 715 L 20 715 L 20 705" stroke="rgba(255,120,200,0.5)" stroke-width="1.5" fill="none" />
+  <path d="M 810 715 L 820 715 L 820 705" stroke="rgba(120,200,255,0.6)" stroke-width="1.5" fill="none" />
+
+  <rect x="25" y="25" width="385" height="190" rx="14" fill="rgba(10,8,18,0.72)" stroke="rgba(100,70,200,0.22)" stroke-width="1"/>
+  <text x="45" y="56" font-family="'Inter', -apple-system, sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="rgba(120,200,255,0.85)">PROFILE OVERVIEW</text>
+  <text x="45" y="84" font-family="'Inter', -apple-system, sans-serif" font-size="18" font-weight="800" fill="url(#headerGrad)">Data &amp; BI Analyst</text>
+  <text x="45" y="112" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="400" fill="rgba(200,200,230,0.85)">Turning complex transactional &amp; customer records</text>
+  <text x="45" y="130" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="400" fill="rgba(200,200,230,0.85)">into clean, narrative-driven business decisions.</text>
+  <circle cx="50" cy="162" r="3.5" fill="#7ee7ff"/>
+  <text x="62" y="166" font-family="'Inter', -apple-system, sans-serif" font-size="11.5" font-weight="500" fill="#e0e0f0">KPI Tracking &amp; Executive Dashboards</text>
+  <circle cx="50" cy="186" r="3.5" fill="#e8c8ff"/>
+  <text x="62" y="190" font-family="'Inter', -apple-system, sans-serif" font-size="11.5" font-weight="500" fill="#e0e0f0">Customer Segmentation &amp; Cohorts</text>
+
+  <rect x="430" y="25" width="385" height="190" rx="14" fill="rgba(10,8,18,0.72)" stroke="rgba(100,70,200,0.22)" stroke-width="1"/>
+  <text x="450" y="56" font-family="'Inter', -apple-system, sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="rgba(200,120,255,0.85)">ANALYTICS CAPABILITIES</text>
+  <rect x="450" y="74" width="8" height="8" rx="2" fill="#7ee7ff"/>
+  <text x="466" y="82" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff">End-to-End Pipeline</text>
+  <text x="466" y="98" font-family="'Inter', -apple-system, sans-serif" font-size="11" font-weight="400" fill="#8a8ab0">Data audit, cleansing, structuring, and feature derivation</text>
+  <rect x="450" y="122" width="8" height="8" rx="2" fill="#e8c8ff"/>
+  <text x="466" y="130" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Interactive BI Systems</text>
+  <text x="466" y="146" font-family="'Inter', -apple-system, sans-serif" font-size="11" font-weight="400" fill="#8a8ab0">Slicer-driven interactive models replacing static reports</text>
+  <rect x="450" y="170" width="8" height="8" rx="2" fill="#ff88cc"/>
+  <text x="466" y="178" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Commercial Intelligence</text>
+  <text x="466" y="194" font-family="'Inter', -apple-system, sans-serif" font-size="11" font-weight="400" fill="#8a8ab0">E-commerce seasonality &amp; product margin drivers</text>
+
+  <a href="https://github.com/mahekbhattf1/Sales---Customer-Performance-tableau" target="_blank">
+    <rect x="25" y="235" width="250" height="235" rx="14" fill="rgba(10,8,18,0.72)" stroke="rgba(120,200,255,0.2)" stroke-width="1"/>
+    <text x="42" y="268" font-family="'Inter', -apple-system, sans-serif" font-size="15" font-weight="800" fill="#ffffff">Sales &amp; Customer BI</text>
+    <text x="42" y="286" font-family="'Inter', -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#7ee7ff">Tableau Dashboard</text>
+    <text x="42" y="316" font-family="'Inter', -apple-system, sans-serif" font-size="11" fill="rgba(200,200,230,0.8)">
+      <tspan x="42" dy="0">Executive BI tool</tspan>
+      <tspan x="42" dy="17">tracking revenue KPIs,</tspan>
+      <tspan x="42" dy="17">sales trends, and loyalty</tspan>
+      <tspan x="42" dy="17">metrics via dynamic views.</tspan>
+    </text>
+    <rect x="42" y="420" width="60" height="24" rx="7" fill="rgba(120,200,255,0.08)" stroke="rgba(120,200,255,0.2)"/>
+    <text x="72" y="436" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#7eb8ff">Tableau</text>
+    <rect x="110" y="420" width="70" height="24" rx="7" fill="rgba(160,120,255,0.08)" stroke="rgba(160,120,255,0.2)"/>
+    <text x="145" y="436" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#b8a0ff">Analytics</text>
+  </a>
+
+  <a href="https://github.com/mahekbhattf1/Bike-Sales-Analysis-Excel-Project" target="_blank">
+    <rect x="295" y="235" width="250" height="235" rx="14" fill="rgba(10,8,18,0.72)" stroke="rgba(200,120,255,0.2)" stroke-width="1"/>
+    <text x="312" y="268" font-family="'Inter', -apple-system, sans-serif" font-size="15" font-weight="800" fill="#ffffff">Bike Customer BI</text>
+    <text x="312" y="286" font-family="'Inter', -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#e8c8ff">Excel Model &amp; Slicers</text>
+    <text x="312" y="316" font-family="'Inter', -apple-system, sans-serif" font-size="11" fill="rgba(200,200,230,0.8)">
+      <tspan x="312" dy="0">1,000 records modeled.</tspan>
+      <tspan x="312" dy="17">Demonstrated 59% commute</tspan>
+      <tspan x="312" dy="17">peak purchase rate &amp; 54%</tspan>
+      <tspan x="312" dy="17">middle-aged conversion.</tspan>
+    </text>
+    <rect x="312" y="420" width="50" height="24" rx="7" fill="rgba(120,220,120,0.08)" stroke="rgba(120,220,120,0.2)"/>
+    <text x="337" y="436" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#9ee79e">Excel</text>
+    <rect x="370" y="420" width="85" height="24" rx="7" fill="rgba(200,120,255,0.08)" stroke="rgba(200,120,255,0.2)"/>
+    <text x="412" y="436" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#e8c8ff">PivotTables</text>
+  </a>
+
+  <a href="https://github.com/mahekbhattf1/Gift-E-Commerce-Sales-Analysis-FNP-Dataset-" target="_blank">
+    <rect x="565" y="235" width="250" height="235" rx="14" fill="rgba(10,8,18,0.72)" stroke="rgba(255,100,180,0.2)" stroke-width="1"/>
+    <text x="582" y="268" font-family="'Inter', -apple-system, sans-serif" font-size="15" font-weight="800" fill="#ffffff">E-Commerce Trends</text>
+    <text x="582" y="286" font-family="'Inter', -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#ff88cc">Revenue Breakdown</text>
+    <text x="582" y="316" font-family="'Inter', -apple-system, sans-serif" font-size="11" fill="rgba(200,200,230,0.8)">
+      <tspan x="582" dy="0">Evaluated 3.52M INR</tspan>
+      <tspan x="582" dy="17">revenue across 1,000 orders</tspan>
+      <tspan x="582" dy="17">dissected by festival,</tspan>
+      <tspan x="582" dy="17">city hubs &amp; Friday peaks.</tspan>
+    </text>
+    <rect x="582" y="420" width="60" height="24" rx="7" fill="rgba(255,120,200,0.08)" stroke="rgba(255,100,180,0.2)"/>
+    <text x="612" y="436" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#ff88cc">P&amp;L BI</text>
+    <rect x="650" y="420" width="70" height="24" rx="7" fill="rgba(120,200,255,
