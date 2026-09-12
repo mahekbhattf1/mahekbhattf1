@@ -1,125 +1,121 @@
 <svg width="850" height="680" viewBox="0 0 850 680" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="glow-rose" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#d890aa" stop-opacity="0.38" />
-      <stop offset="100%" stop-color="#d890aa" stop-opacity="0" />
+    <radialGradient id="glow-magenta" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff4d9a" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#ff4d9a" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="glow-blush" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fcb4aa" stop-opacity="0.28" />
-      <stop offset="100%" stop-color="#fcb4aa" stop-opacity="0" />
+    <radialGradient id="glow-wine" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#802040" stop-opacity="0.40" />
+      <stop offset="100%" stop-color="#802040" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="glow-lilac" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#d8b4ff" stop-opacity="0.22" />
-      <stop offset="100%" stop-color="#d8b4ff" stop-opacity="0" />
+    <radialGradient id="glow-hot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffc4e4" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#ffc4e4" stop-opacity="0" />
     </radialGradient>
     <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fff8fb" />
-      <stop offset="55%" stop-color="#ffd0ee" />
-      <stop offset="100%" stop-color="#d890aa" />
+      <stop offset="0%" stop-color="#fff4fa" />
+      <stop offset="55%" stop-color="#ff9ec8" />
+      <stop offset="100%" stop-color="#ff4d9a" />
     </linearGradient>
   </defs>
   <style>
-    @keyframes drift-r { 0%, 100% { transform: translate(0, 0); opacity: 0.7; } 50% { transform: translate(22px, -10px); opacity: 1; } }
-    @keyframes drift-l { 0%, 100% { transform: translate(0, 0); opacity: 0.55; } 50% { transform: translate(-18px, 12px); opacity: 0.9; } }
+    @keyframes drift-r { 0%, 100% { transform: translate(0, 0); opacity: 0.65; } 50% { transform: translate(18px, -8px); opacity: 1; } }
+    @keyframes drift-l { 0%, 100% { transform: translate(0, 0); opacity: 0.5; } 50% { transform: translate(-14px, 10px); opacity: 0.88; } }
     .g1 { animation: drift-r 8s ease-in-out infinite; }
     .g2 { animation: drift-l 7s ease-in-out infinite; }
   </style>
 
   <rect width="850" height="680" fill="#000000" />
 
-  <ellipse class="g1" cx="200" cy="40" rx="260" ry="90" fill="url(#glow-rose)" />
-  <ellipse class="g2" cx="680" cy="70" rx="210" ry="80" fill="url(#glow-blush)" />
-  <ellipse class="g1" cx="140" cy="320" rx="200" ry="120" fill="url(#glow-lilac)" />
-  <ellipse class="g2" cx="720" cy="390" rx="220" ry="130" fill="url(#glow-rose)" />
-  <ellipse class="g1" cx="260" cy="620" rx="230" ry="110" fill="url(#glow-blush)" />
-
-  <path d="M40 8 C120 40, 220 2, 310 28 C360 42, 400 8, 470 22" stroke="#ffd0ee" stroke-opacity="0.22" stroke-width="1.2" fill="none" />
-  <path d="M520 6 C600 32, 690 4, 810 26" stroke="#fcb4aa" stroke-opacity="0.18" stroke-width="1" fill="none" />
-  <path d="M90 18 C180 48, 280 10, 390 36" stroke="#d8b4ff" stroke-opacity="0.14" stroke-width="0.9" fill="none" />
+  <ellipse class="g1" cx="190" cy="30" rx="240" ry="80" fill="url(#glow-magenta)" />
+  <ellipse class="g2" cx="690" cy="60" rx="200" ry="70" fill="url(#glow-wine)" />
+  <ellipse class="g1" cx="130" cy="310" rx="190" ry="110" fill="url(#glow-wine)" />
+  <ellipse class="g2" cx="730" cy="400" rx="210" ry="120" fill="url(#glow-magenta)" />
+  <ellipse class="g1" cx="250" cy="630" rx="220" ry="100" fill="url(#glow-hot)" />
 
   <g transform="translate(25, 28)">
-    <rect x="20" y="20" width="370" height="190" rx="14" fill="#0a0508" fill-opacity="0.78" stroke="#d890aa" stroke-opacity="0.28" stroke-width="1" />
-    <text x="40" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#ffd0ee" fill-opacity="0.82">PROFILE SUMMARY</text>
+    <rect x="20" y="20" width="370" height="190" rx="14" fill="#0a0306" fill-opacity="0.82" stroke="#ff4d9a" stroke-opacity="0.28" stroke-width="1" />
+    <text x="40" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#ff9ec8" fill-opacity="0.88">PROFILE SUMMARY</text>
     <text x="40" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="800" fill="url(#titleGrad)">Data &amp; BI Analyst</text>
-    <text x="40" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#f3d6e2" fill-opacity="0.88">Transforming transactional &amp; customer records</text>
-    <text x="40" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#f3d6e2" fill-opacity="0.88">into clean, narrative-driven business decisions.</text>
-    <circle cx="45" cy="154" r="3.5" fill="#ffd0ee" />
-    <text x="56" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="500" fill="#f6e6ee">KPI Tracking &amp; Executive Reporting</text>
-    <circle cx="45" cy="178" r="3.5" fill="#d8b4ff" />
-    <text x="56" y="182" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="500" fill="#f6e6ee">Segmentation &amp; Predictive Insights</text>
+    <text x="40" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#f3c6d8" fill-opacity="0.88">Transforming transactional &amp; customer records</text>
+    <text x="40" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="400" fill="#f3c6d8" fill-opacity="0.88">into clean, narrative-driven business decisions.</text>
+    <circle cx="45" cy="154" r="3.5" fill="#ff4d9a" />
+    <text x="56" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="500" fill="#ffe4f0">KPI Tracking &amp; Executive Reporting</text>
+    <circle cx="45" cy="178" r="3.5" fill="#ff9ec8" />
+    <text x="56" y="182" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="500" fill="#ffe4f0">Segmentation &amp; Predictive Insights</text>
 
-    <rect x="410" y="20" width="370" height="190" rx="14" fill="#0a0508" fill-opacity="0.78" stroke="#d890aa" stroke-opacity="0.28" stroke-width="1" />
-    <text x="430" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#d8b4ff" fill-opacity="0.86">ANALYTICS CAPABILITIES</text>
-    <rect x="430" y="70" width="8" height="8" rx="2" fill="#ffd0ee" />
-    <text x="446" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#fff8fb">End-to-End Pipeline</text>
-    <text x="446" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#c4a0b0">Data cleaning, outlier audit, and feature derivation</text>
-    <rect x="430" y="118" width="8" height="8" rx="2" fill="#d8b4ff" />
-    <text x="446" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#fff8fb">Interactive Dashboards</text>
-    <text x="446" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#c4a0b0">Slicer-driven visual exploration replacing static reports</text>
-    <rect x="430" y="166" width="8" height="8" rx="2" fill="#fcb4aa" />
-    <text x="446" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#fff8fb">Commercial Intelligence</text>
-    <text x="446" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#c4a0b0">E-commerce seasonality &amp; product margin drivers</text>
+    <rect x="410" y="20" width="370" height="190" rx="14" fill="#0a0306" fill-opacity="0.82" stroke="#ff4d9a" stroke-opacity="0.28" stroke-width="1" />
+    <text x="430" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#ff7eb8" fill-opacity="0.90">ANALYTICS CAPABILITIES</text>
+    <rect x="430" y="70" width="8" height="8" rx="2" fill="#ff4d9a" />
+    <text x="446" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#fff4fa">End-to-End Pipeline</text>
+    <text x="446" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#a06078">Data cleaning, outlier audit, and feature derivation</text>
+    <rect x="430" y="118" width="8" height="8" rx="2" fill="#ff9ec8" />
+    <text x="446" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#fff4fa">Interactive Dashboards</text>
+    <text x="446" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#a06078">Slicer-driven visual exploration replacing static reports</text>
+    <rect x="430" y="166" width="8" height="8" rx="2" fill="#ffc4e4" />
+    <text x="446" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#fff4fa">Commercial Intelligence</text>
+    <text x="446" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="400" fill="#a06078">E-commerce seasonality &amp; product margin drivers</text>
   </g>
 
   <g transform="translate(25, 258)">
-    <rect x="20" y="20" width="240" height="210" rx="14" fill="#0a0508" fill-opacity="0.74" stroke="#ffd0ee" stroke-opacity="0.22" stroke-width="1" />
-    <text x="36" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="800" fill="#fff8fb">Sales &amp; Customer BI</text>
-    <text x="36" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#ffd0ee">Tableau Dashboard</text>
-    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#f3d6e2" fill-opacity="0.82">
+    <rect x="20" y="20" width="240" height="210" rx="14" fill="#0a0306" fill-opacity="0.80" stroke="#ff4d9a" stroke-opacity="0.24" stroke-width="1" />
+    <text x="36" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="800" fill="#fff4fa">Sales &amp; Customer BI</text>
+    <text x="36" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#ff4d9a">Tableau Dashboard</text>
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#f3c6d8" fill-opacity="0.82">
       <tspan x="36" y="98">Executive performance tool</tspan>
       <tspan x="36" dy="16">tracking revenue KPIs,</tspan>
       <tspan x="36" dy="16">sales trends, and loyalty</tspan>
       <tspan x="36" dy="16">metrics via live views.</tspan>
     </text>
-    <rect x="36" y="180" width="60" height="22" rx="6" fill="#1a0a12" stroke="#ffd0ee" stroke-opacity="0.22" />
-    <text x="66" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#ffd0ee">Tableau</text>
-    <rect x="102" y="180" width="70" height="22" rx="6" fill="#1a0a12" stroke="#d8b4ff" stroke-opacity="0.22" />
-    <text x="137" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#d8b4ff">Analytics</text>
+    <rect x="36" y="180" width="60" height="22" rx="6" fill="#14060c" stroke="#ff4d9a" stroke-opacity="0.26" />
+    <text x="66" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#ff7eb8">Tableau</text>
+    <rect x="102" y="180" width="70" height="22" rx="6" fill="#14060c" stroke="#ff9ec8" stroke-opacity="0.24" />
+    <text x="137" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#ff9ec8">Analytics</text>
 
-    <rect x="280" y="20" width="240" height="210" rx="14" fill="#0a0508" fill-opacity="0.74" stroke="#d8b4ff" stroke-opacity="0.22" stroke-width="1" />
-    <text x="296" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="800" fill="#fff8fb">Bike Customer BI</text>
-    <text x="296" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#d8b4ff">Excel Model &amp; Slicers</text>
-    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#f3d6e2" fill-opacity="0.82">
+    <rect x="280" y="20" width="240" height="210" rx="14" fill="#0a0306" fill-opacity="0.80" stroke="#ff7eb8" stroke-opacity="0.24" stroke-width="1" />
+    <text x="296" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="800" fill="#fff4fa">Bike Customer BI</text>
+    <text x="296" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#ff7eb8">Excel Model &amp; Slicers</text>
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#f3c6d8" fill-opacity="0.82">
       <tspan x="296" y="98">1,000 records structured.</tspan>
       <tspan x="296" dy="16">Discovered 59% commute</tspan>
       <tspan x="296" dy="16">peak purchase rate &amp; 54%</tspan>
       <tspan x="296" dy="16">middle-aged conversion.</tspan>
     </text>
-    <rect x="296" y="180" width="46" height="22" rx="6" fill="#1a0a12" stroke="#fcb4aa" stroke-opacity="0.24" />
-    <text x="319" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#fcb4aa">Excel</text>
-    <rect x="348" y="180" width="80" height="22" rx="6" fill="#1a0a12" stroke="#d8b4ff" stroke-opacity="0.22" />
-    <text x="388" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#d8b4ff">PivotTables</text>
+    <rect x="296" y="180" width="46" height="22" rx="6" fill="#14060c" stroke="#ffc4e4" stroke-opacity="0.26" />
+    <text x="319" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#ffc4e4">Excel</text>
+    <rect x="348" y="180" width="80" height="22" rx="6" fill="#14060c" stroke="#ff7eb8" stroke-opacity="0.24" />
+    <text x="388" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#ff7eb8">PivotTables</text>
 
-    <rect x="540" y="20" width="240" height="210" rx="14" fill="#0a0508" fill-opacity="0.74" stroke="#fcb4aa" stroke-opacity="0.24" stroke-width="1" />
-    <text x="556" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="800" fill="#fff8fb">E-Commerce Trends</text>
-    <text x="556" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#fcb4aa">Revenue Breakdown</text>
-    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#f3d6e2" fill-opacity="0.82">
+    <rect x="540" y="20" width="240" height="210" rx="14" fill="#0a0306" fill-opacity="0.80" stroke="#ffc4e4" stroke-opacity="0.22" stroke-width="1" />
+    <text x="556" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5" font-weight="800" fill="#fff4fa">E-Commerce Trends</text>
+    <text x="556" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="600" fill="#ffc4e4">Revenue Breakdown</text>
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" fill="#f3c6d8" fill-opacity="0.82">
       <tspan x="556" y="98">Evaluated 3.52M INR</tspan>
       <tspan x="556" dy="16">revenue over 1,000 orders</tspan>
       <tspan x="556" dy="16">dissected by occasion,</tspan>
       <tspan x="556" dy="16">city hubs, &amp; Friday peak.</tspan>
     </text>
-    <rect x="556" y="180" width="55" height="22" rx="6" fill="#1a0a12" stroke="#fcb4aa" stroke-opacity="0.24" />
-    <text x="583" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#fcb4aa">P&amp;L BI</text>
-    <rect x="617" y="180" width="70" height="22" rx="6" fill="#1a0a12" stroke="#ffd0ee" stroke-opacity="0.22" />
-    <text x="652" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#ffd0ee">Modeling</text>
+    <rect x="556" y="180" width="55" height="22" rx="6" fill="#14060c" stroke="#ffc4e4" stroke-opacity="0.26" />
+    <text x="583" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#ffc4e4">P&amp;L BI</text>
+    <rect x="617" y="180" width="70" height="22" rx="6" fill="#14060c" stroke="#ff4d9a" stroke-opacity="0.26" />
+    <text x="652" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#ff4d9a">Modeling</text>
   </g>
 
   <g transform="translate(25, 528)">
-    <text x="210" y="30" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#ffd0ee" fill-opacity="0.72">DATA ANALYSIS &amp; CODE</text>
-    <text x="590" y="30" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#d8b4ff" fill-opacity="0.72">BI &amp; ENTERPRISE SYSTEMS</text>
-    <rect x="50" y="44" width="90" height="36" rx="18" fill="#0a0508" stroke="#ffd0ee" stroke-opacity="0.28" />
-    <text x="95" y="67" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#ffd0ee">Python</text>
-    <rect x="150" y="44" width="75" height="36" rx="18" fill="#0a0508" stroke="#d8b4ff" stroke-opacity="0.28" />
-    <text x="187" y="67" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#d8b4ff">SQL</text>
-    <rect x="235" y="44" width="130" height="36" rx="18" fill="#0a0508" stroke="#fcb4aa" stroke-opacity="0.28" />
-    <text x="300" y="67" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#fcb4aa">Advanced Excel</text>
-    <line x1="410" y1="20" x2="410" y2="90" stroke="#d890aa" stroke-opacity="0.24" stroke-width="1" />
-    <rect x="460" y="44" width="115" height="36" rx="18" fill="#0a0508" stroke="#ffd0ee" stroke-opacity="0.28" />
-    <text x="517" y="67" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#ffd0ee">Tableau</text>
-    <rect x="585" y="44" width="95" height="36" rx="18" fill="#0a0508" stroke="#d8b4ff" stroke-opacity="0.28" />
-    <text x="632" y="67" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#d8b4ff">SAP</text>
-    <rect x="690" y="44" width="70" height="36" rx="18" fill="#0a0508" stroke="#fcb4aa" stroke-opacity="0.28" />
-    <text x="725" y="67" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#fcb4aa">BI</text>
+    <text x="210" y="30" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#ff7eb8" fill-opacity="0.78">DATA ANALYSIS &amp; CODE</text>
+    <text x="590" y="30" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#ffc4e4" fill-opacity="0.78">BI &amp; ENTERPRISE SYSTEMS</text>
+    <rect x="50" y="44" width="90" height="36" rx="18" fill="#0a0306" stroke="#ff4d9a" stroke-opacity="0.30" />
+    <text x="95" y="67" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#ff7eb8">Python</text>
+    <rect x="150" y="44" width="75" height="36" rx="18" fill="#0a0306" stroke="#ff9ec8" stroke-opacity="0.30" />
+    <text x="187" y="67" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#ff9ec8">SQL</text>
+    <rect x="235" y="44" width="130" height="36" rx="18" fill="#0a0306" stroke="#ffc4e4" stroke-opacity="0.28" />
+    <text x="300" y="67" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#ffc4e4">Advanced Excel</text>
+    <line x1="410" y1="20" x2="410" y2="90" stroke="#ff4d9a" stroke-opacity="0.22" stroke-width="1" />
+    <rect x="460" y="44" width="115" height="36" rx="18" fill="#0a0306" stroke="#ff4d9a" stroke-opacity="0.30" />
+    <text x="517" y="67" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#ff7eb8">Tableau</text>
+    <rect x="585" y="44" width="95" height="36" rx="18" fill="#0a0306" stroke="#ff9ec8" stroke-opacity="0.30" />
+    <text x="632" y="67" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#ff9ec8">SAP</text>
+    <rect x="690" y="44" width="70" height="36" rx="18" fill="#0a0306" stroke="#ffc4e4" stroke-opacity="0.28" />
+    <text x="725" y="67" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#ffc4e4">BI</text>
   </g>
 </svg>
