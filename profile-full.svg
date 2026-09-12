@@ -1,57 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 680" width="100%" role="img" aria-label="About, featured projects, and tech stack">
+<svg width="850" height="680" viewBox="0 0 850 680" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <style>
-      @keyframes bg-drift-1 { 0%, 100% { transform: translate(0, 0); opacity: 0.7; } 50% { transform: translate(40px, -30px); opacity: 1; } }
-      @keyframes bg-drift-2 { 0%, 100% { transform: translate(0, 0); opacity: 0.6; } 50% { transform: translate(-45px, 25px); opacity: 0.95; } }
-      @keyframes bg-drift-3 { 0%, 100% { transform: translate(0, 0); opacity: 0.65; } 50% { transform: translate(35px, 35px); opacity: 1; } }
-      @keyframes bg-drift-4 { 0%, 100% { transform: translate(0, 0); opacity: 0.55; } 50% { transform: translate(-30px, -20px); opacity: 0.9; } }
-      @keyframes bg-scan { 0% { transform: translateY(-680px); opacity: 0; } 50% { opacity: 0.45; } 100% { transform: translateY(680px); opacity: 0; } }
-
-      #aura-cyan-top { animation: bg-drift-1 9s ease-in-out infinite; }
-      #aura-purple-mid { animation: bg-drift-2 11s ease-in-out infinite 0.5s; }
-      #aura-pink-mid { animation: bg-drift-3 8.5s ease-in-out infinite 1s; }
-      #aura-cyan-bottom { animation: bg-drift-4 10s ease-in-out infinite 0.2s; }
-      #bg-scanline { animation: bg-scan 7s linear infinite; }
-    </style>
     <radialGradient id="grad-cyan" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.45" />
-      <stop offset="60%" stop-color="#0080ff" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#06060a" stop-opacity="0" />
+      <stop offset="0%" stop-color="rgba(0,180,240,0.45)" />
+      <stop offset="100%" stop-color="rgba(0,180,240,0)" />
     </radialGradient>
     <radialGradient id="grad-purple" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#8a2be2" stop-opacity="0.45" />
-      <stop offset="60%" stop-color="#551a8b" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#06060a" stop-opacity="0" />
+      <stop offset="0%" stop-color="rgba(140,40,240,0.4)" />
+      <stop offset="100%" stop-color="rgba(140,40,240,0)" />
     </radialGradient>
     <radialGradient id="grad-pink" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff2a85" stop-opacity="0.4" />
-      <stop offset="60%" stop-color="#b80058" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#06060a" stop-opacity="0" />
+      <stop offset="0%" stop-color="rgba(255,60,160,0.3)" />
+      <stop offset="100%" stop-color="rgba(255,60,160,0)" />
     </radialGradient>
-    <linearGradient id="scan-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0" />
-      <stop offset="50%" stop-color="#7ee7ff" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0" />
-    </linearGradient>
     <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" />
       <stop offset="50%" stop-color="#d0c0ff" />
       <stop offset="100%" stop-color="#7ee7ff" />
     </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(110, 80, 220, 0.05)" stroke-width="1" />
-    </pattern>
   </defs>
+  <style>
+    @keyframes drift-r { 0%, 100% { transform: translate(0, 0); opacity: 0.7; } 50% { transform: translate(30px, -15px); opacity: 1; } }
+    @keyframes drift-l { 0%, 100% { transform: translate(0, 0); opacity: 0.6; } 50% { transform: translate(-25px, 15px); opacity: 0.95; } }
+    .g1 { animation: drift-r 7.5s ease-in-out infinite; }
+    .g2 { animation: drift-l 6.5s ease-in-out infinite; }
+  </style>
 
   <rect width="850" height="680" fill="#06060a" />
-  <g filter="blur(35px)">
-    <circle id="aura-cyan-top" cx="180" cy="140" r="220" fill="url(#grad-cyan)" />
-    <circle id="aura-purple-mid" cx="700" cy="280" r="240" fill="url(#grad-purple)" />
-    <circle id="aura-pink-mid" cx="160" cy="470" r="220" fill="url(#grad-pink)" />
-    <circle id="aura-cyan-bottom" cx="680" cy="600" r="200" fill="url(#grad-cyan)" />
-  </g>
-  <rect width="850" height="680" fill="url(#grid)" />
-  <rect id="bg-scanline" x="0" y="0" width="850" height="16" fill="url(#scan-grad)" />
+  <ellipse class="g1" cx="180" cy="140" rx="220" ry="140" fill="url(#grad-cyan)" />
+  <ellipse class="g2" cx="700" cy="280" rx="240" ry="150" fill="url(#grad-purple)" />
+  <ellipse class="g1" cx="160" cy="470" rx="220" ry="140" fill="url(#grad-pink)" />
+  <ellipse class="g2" cx="680" cy="600" rx="200" ry="120" fill="url(#grad-cyan)" />
 
   <g transform="translate(25, 16)">
     <rect x="20" y="20" width="370" height="190" rx="14" fill="rgba(10,8,18,0.75)" stroke="rgba(100,70,200,0.22)" stroke-width="1" />
