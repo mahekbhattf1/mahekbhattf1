@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 850 1720" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 680" width="100%" role="img" aria-label="About, featured projects, and tech stack">
   <defs>
     <style>
       @keyframes bg-drift-1 { 0%, 100% { transform: translate(0, 0); opacity: 0.7; } 50% { transform: translate(40px, -30px); opacity: 1; } }
       @keyframes bg-drift-2 { 0%, 100% { transform: translate(0, 0); opacity: 0.6; } 50% { transform: translate(-45px, 25px); opacity: 0.95; } }
       @keyframes bg-drift-3 { 0%, 100% { transform: translate(0, 0); opacity: 0.65; } 50% { transform: translate(35px, 35px); opacity: 1; } }
       @keyframes bg-drift-4 { 0%, 100% { transform: translate(0, 0); opacity: 0.55; } 50% { transform: translate(-30px, -20px); opacity: 0.9; } }
-      @keyframes bg-scan { 0% { transform: translateY(-1720px); opacity: 0; } 50% { opacity: 0.45; } 100% { transform: translateY(1720px); opacity: 0; } }
+      @keyframes bg-scan { 0% { transform: translateY(-680px); opacity: 0; } 50% { opacity: 0.45; } 100% { transform: translateY(680px); opacity: 0; } }
 
       #aura-cyan-top { animation: bg-drift-1 9s ease-in-out infinite; }
       #aura-purple-mid { animation: bg-drift-2 11s ease-in-out infinite 0.5s; }
@@ -13,88 +13,129 @@
       #aura-cyan-bottom { animation: bg-drift-4 10s ease-in-out infinite 0.2s; }
       #bg-scanline { animation: bg-scan 7s linear infinite; }
     </style>
-
-    <!-- Radial Gradients -->
     <radialGradient id="grad-cyan" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.45" />
       <stop offset="60%" stop-color="#0080ff" stop-opacity="0.15" />
       <stop offset="100%" stop-color="#06060a" stop-opacity="0" />
     </radialGradient>
-
     <radialGradient id="grad-purple" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#8a2be2" stop-opacity="0.45" />
       <stop offset="60%" stop-color="#551a8b" stop-opacity="0.15" />
       <stop offset="100%" stop-color="#06060a" stop-opacity="0" />
     </radialGradient>
-
     <radialGradient id="grad-pink" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ff2a85" stop-opacity="0.4" />
       <stop offset="60%" stop-color="#b80058" stop-opacity="0.12" />
       <stop offset="100%" stop-color="#06060a" stop-opacity="0" />
     </radialGradient>
-
     <linearGradient id="scan-grad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#00d4ff" stop-opacity="0" />
       <stop offset="50%" stop-color="#7ee7ff" stop-opacity="0.2" />
       <stop offset="100%" stop-color="#00d4ff" stop-opacity="0" />
     </linearGradient>
-
-    <!-- Background Tech Grid -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#d0c0ff" />
+      <stop offset="100%" stop-color="#7ee7ff" />
+    </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(110, 80, 220, 0.05)" stroke-width="1" />
     </pattern>
   </defs>
 
-  <!-- 1. Master Canvas Background -->
-  <rect width="850" height="1720" rx="24" fill="#06060a" />
-
-  <!-- 2. Continuous Glowing Mesh -->
+  <rect width="850" height="680" fill="#06060a" />
   <g filter="blur(35px)">
-    <circle id="aura-cyan-top" cx="180" cy="220" r="280" fill="url(#grad-cyan)" />
-    <circle id="aura-purple-mid" cx="700" cy="580" r="320" fill="url(#grad-purple)" />
-    <circle id="aura-pink-mid" cx="150" cy="1050" r="300" fill="url(#grad-pink)" />
-    <circle id="aura-cyan-bottom" cx="680" cy="1480" r="300" fill="url(#grad-cyan)" />
+    <circle id="aura-cyan-top" cx="180" cy="140" r="220" fill="url(#grad-cyan)" />
+    <circle id="aura-purple-mid" cx="700" cy="280" r="240" fill="url(#grad-purple)" />
+    <circle id="aura-pink-mid" cx="160" cy="470" r="220" fill="url(#grad-pink)" />
+    <circle id="aura-cyan-bottom" cx="680" cy="600" r="200" fill="url(#grad-cyan)" />
+  </g>
+  <rect width="850" height="680" fill="url(#grid)" />
+  <rect id="bg-scanline" x="0" y="0" width="850" height="16" fill="url(#scan-grad)" />
+
+  <g transform="translate(25, 16)">
+    <rect x="20" y="20" width="370" height="190" rx="14" fill="rgba(10,8,18,0.75)" stroke="rgba(100,70,200,0.22)" stroke-width="1" />
+    <text x="40" y="52" font-family="'Inter', -apple-system, sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="rgba(120,200,255,0.8)">PROFILE SUMMARY</text>
+    <text x="40" y="78" font-family="'Inter', -apple-system, sans-serif" font-size="17" font-weight="800" fill="url(#headerGrad)">Data &amp; BI Analyst</text>
+    <text x="40" y="104" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="400" fill="rgba(200,200,230,0.85)">Transforming transactional &amp; customer records</text>
+    <text x="40" y="122" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="400" fill="rgba(200,200,230,0.85)">into clean, narrative-driven business decisions.</text>
+    <circle cx="45" cy="154" r="3.5" fill="#7ee7ff" />
+    <text x="56" y="158" font-family="'Inter', -apple-system, sans-serif" font-size="11.5" font-weight="500" fill="#e0e0f0">KPI Tracking &amp; Executive Reporting</text>
+    <circle cx="45" cy="178" r="3.5" fill="#e8c8ff" />
+    <text x="56" y="182" font-family="'Inter', -apple-system, sans-serif" font-size="11.5" font-weight="500" fill="#e0e0f0">Segmentation &amp; Predictive Insights</text>
+
+    <rect x="410" y="20" width="370" height="190" rx="14" fill="rgba(10,8,18,0.75)" stroke="rgba(100,70,200,0.22)" stroke-width="1" />
+    <text x="430" y="52" font-family="'Inter', -apple-system, sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="rgba(200,120,255,0.8)">ANALYTICS CAPABILITIES</text>
+    <rect x="430" y="70" width="8" height="8" rx="2" fill="#7ee7ff" />
+    <text x="446" y="78" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff">End-to-End Pipeline</text>
+    <text x="446" y="94" font-family="'Inter', -apple-system, sans-serif" font-size="11" font-weight="400" fill="#8a8ab0">Data cleaning, outlier audit, and feature derivation</text>
+    <rect x="430" y="118" width="8" height="8" rx="2" fill="#e8c8ff" />
+    <text x="446" y="126" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Interactive Dashboards</text>
+    <text x="446" y="142" font-family="'Inter', -apple-system, sans-serif" font-size="11" font-weight="400" fill="#8a8ab0">Slicer-driven visual exploration replacing static reports</text>
+    <rect x="430" y="166" width="8" height="8" rx="2" fill="#ff88cc" />
+    <text x="446" y="174" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Commercial Intelligence</text>
+    <text x="446" y="190" font-family="'Inter', -apple-system, sans-serif" font-size="11" font-weight="400" fill="#8a8ab0">E-commerce seasonality &amp; product margin drivers</text>
   </g>
 
-  <!-- 3. Grid Pattern Layer -->
-  <rect width="850" height="1720" rx="24" fill="url(#grid)" />
+  <g transform="translate(25, 246)">
+    <rect x="20" y="20" width="240" height="210" rx="14" fill="rgba(10,8,18,0.72)" stroke="rgba(120,200,255,0.18)" stroke-width="1" />
+    <text x="36" y="50" font-family="'Inter', -apple-system, sans-serif" font-size="14.5" font-weight="800" fill="#ffffff">Sales &amp; Customer BI</text>
+    <text x="36" y="68" font-family="'Inter', -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#7ee7ff">Tableau Dashboard</text>
+    <text font-family="'Inter', -apple-system, sans-serif" font-size="11" fill="rgba(200,200,230,0.8)">
+      <tspan x="36" y="98">Executive performance tool</tspan>
+      <tspan x="36" dy="16">tracking revenue KPIs,</tspan>
+      <tspan x="36" dy="16">sales trends, and loyalty</tspan>
+      <tspan x="36" dy="16">metrics via live views.</tspan>
+    </text>
+    <rect x="36" y="180" width="60" height="22" rx="6" fill="rgba(120,200,255,0.08)" stroke="rgba(120,200,255,0.2)" />
+    <text x="66" y="195" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#7eb8ff">Tableau</text>
+    <rect x="102" y="180" width="70" height="22" rx="6" fill="rgba(160,120,255,0.08)" stroke="rgba(160,120,255,0.2)" />
+    <text x="137" y="195" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#b8a0ff">Analytics</text>
 
-  <!-- 4. Subtle Border and Ambient Lines -->
-  <rect width="848" height="1718" x="1" y="1" rx="23" fill="none" stroke="rgba(110, 80, 220, 0.25)" stroke-width="1.5" />
-  <rect id="bg-scanline" x="0" y="0" width="850" height="18" fill="url(#scan-grad)" />
+    <rect x="280" y="20" width="240" height="210" rx="14" fill="rgba(10,8,18,0.72)" stroke="rgba(200,120,255,0.18)" stroke-width="1" />
+    <text x="296" y="50" font-family="'Inter', -apple-system, sans-serif" font-size="14.5" font-weight="800" fill="#ffffff">Bike Customer BI</text>
+    <text x="296" y="68" font-family="'Inter', -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#e8c8ff">Excel Model &amp; Slicers</text>
+    <text font-family="'Inter', -apple-system, sans-serif" font-size="11" fill="rgba(200,200,230,0.8)">
+      <tspan x="296" y="98">1,000 records structured.</tspan>
+      <tspan x="296" dy="16">Discovered 59% commute</tspan>
+      <tspan x="296" dy="16">peak purchase rate &amp; 54%</tspan>
+      <tspan x="296" dy="16">middle-aged conversion.</tspan>
+    </text>
+    <rect x="296" y="180" width="46" height="22" rx="6" fill="rgba(120,220,120,0.08)" stroke="rgba(120,220,120,0.2)" />
+    <text x="319" y="195" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#9ee79e">Excel</text>
+    <rect x="348" y="180" width="80" height="22" rx="6" fill="rgba(200,120,255,0.08)" stroke="rgba(200,120,255,0.2)" />
+    <text x="388" y="195" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#e8c8ff">PivotTables</text>
 
-  <!-- 5. Content Layers Embedded Seamlessly on Top of Background -->
-
-  <!-- Header GIF -->
-  <g transform="translate(25, 25)">
-    <clipPath id="clip-hdr">
-      <rect width="800" height="260" rx="16" />
-    </clipPath>
-    <image href="https://raw.githubusercontent.com/mahekbhattf1/mahekbhattf1/main/pfp.gif" width="800" height="260" clip-path="url(#clip-hdr)" preserveAspectRatio="xMidYMid slice" />
+    <rect x="540" y="20" width="240" height="210" rx="14" fill="rgba(10,8,18,0.72)" stroke="rgba(255,100,180,0.18)" stroke-width="1" />
+    <text x="556" y="50" font-family="'Inter', -apple-system, sans-serif" font-size="14.5" font-weight="800" fill="#ffffff">E-Commerce Trends</text>
+    <text x="556" y="68" font-family="'Inter', -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#ff88cc">Revenue Breakdown</text>
+    <text font-family="'Inter', -apple-system, sans-serif" font-size="11" fill="rgba(200,200,230,0.8)">
+      <tspan x="556" y="98">Evaluated 3.52M INR</tspan>
+      <tspan x="556" dy="16">revenue over 1,000 orders</tspan>
+      <tspan x="556" dy="16">dissected by occasion,</tspan>
+      <tspan x="556" dy="16">city hubs, &amp; Friday peak.</tspan>
+    </text>
+    <rect x="556" y="180" width="55" height="22" rx="6" fill="rgba(255,120,200,0.08)" stroke="rgba(255,100,180,0.2)" />
+    <text x="583" y="195" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#ff88cc">P&amp;L BI</text>
+    <rect x="617" y="180" width="70" height="22" rx="6" fill="rgba(120,200,255,0.08)" stroke="rgba(120,200,255,0.2)" />
+    <text x="652" y="195" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#7ee7ff">Modeling</text>
   </g>
 
-  <!-- Social Badges -->
-  <g transform="translate(325, 305)">
-    <a href="https://www.linkedin.com/in/mahek-bhattf1/" target="_blank">
-      <image href="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&amp;logo=linkedin&amp;logoColor=7ee7ff&amp;labelColor=06060a&amp;color=121026" x="0" y="0" height="28" />
-    </a>
-    <a href="mailto:mahekbhattf1@gmail.com">
-      <image href="https://img.shields.io/badge/Email-D14836?style=flat-square&amp;logo=gmail&amp;logoColor=ff88cc&amp;labelColor=06060a&amp;color=121026" x="110" y="0" height="28" />
-    </a>
+  <g transform="translate(25, 516)">
+    <text x="210" y="30" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="rgba(120,200,255,0.7)">DATA ANALYSIS &amp; CODE</text>
+    <text x="590" y="30" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="rgba(200,120,255,0.7)">BI &amp; ENTERPRISE SYSTEMS</text>
+    <rect x="50" y="44" width="90" height="36" rx="18" fill="rgba(8,6,14,0.85)" stroke="rgba(120,200,255,0.25)" />
+    <text x="95" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#7ee7ff">Python</text>
+    <rect x="150" y="44" width="75" height="36" rx="18" fill="rgba(8,6,14,0.85)" stroke="rgba(160,120,255,0.25)" />
+    <text x="187" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#d0c0ff">SQL</text>
+    <rect x="235" y="44" width="130" height="36" rx="18" fill="rgba(8,6,14,0.85)" stroke="rgba(120,220,120,0.25)" />
+    <text x="300" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#9ee79e">Advanced Excel</text>
+    <line x1="410" y1="20" x2="410" y2="90" stroke="rgba(110,80,220,0.25)" stroke-width="1" />
+    <rect x="460" y="44" width="115" height="36" rx="18" fill="rgba(8,6,14,0.85)" stroke="rgba(255,160,100,0.25)" />
+    <text x="517" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffb088">Tableau</text>
+    <rect x="585" y="44" width="95" height="36" rx="18" fill="rgba(8,6,14,0.85)" stroke="rgba(120,180,255,0.25)" />
+    <text x="632" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#7eb8ff">SAP</text>
+    <rect x="690" y="44" width="70" height="36" rx="18" fill="rgba(8,6,14,0.85)" stroke="rgba(255,200,80,0.25)" />
+    <text x="725" y="67" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#ffcc88">BI</text>
   </g>
-
-  <!-- About Me -->
-  <image href="https://raw.githubusercontent.com/mahekbhattf1/mahekbhattf1/main/about-me.svg" x="25" y="350" width="800" />
-
-  <!-- Featured Projects -->
-  <image href="https://raw.githubusercontent.com/mahekbhattf1/mahekbhattf1/main/featured-projects.svg" x="25" y="600" width="800" />
-
-  <!-- Tech Stack -->
-  <image href="https://raw.githubusercontent.com/mahekbhattf1/mahekbhattf1/main/tech-stack.svg" x="25" y="1020" width="800" />
-
-  <!-- GitHub Streak Widget -->
-  <image href="https://streak-stats.demolab.com/?user=mahekbhattf1&amp;background=06060a00&amp;border=6e50dc40&amp;stroke=6e50dc40&amp;ring=7ee7ff&amp;fire=ff88cc&amp;currStreakNum=ffffff&amp;sideNums=ffffff&amp;currStreakLabel=7ee7ff&amp;sideLabels=ff88cc&amp;dates=8a8ab0&amp;border_radius=16" x="25" y="1230" width="800" />
-
-  <!-- Footer Wave -->
-  <image href="https://capsule-render.vercel.app/api?type=waving&amp;color=06060a&amp;stroke=6e50dc&amp;strokeWidth=1&amp;height=100&amp;section=footer" x="25" y="1560" width="800" height="100" />
 </svg>
